@@ -6,21 +6,7 @@ import 'dart:convert';
 
 class DataServices {
   String baseUrl = "http://10.0.2.2:8080";
-
-  /*Future<List<DestinationModel>> getInfoDestination() async {
-    String subUrl = "/destination";
-    http.Response response = await http.get(Uri.parse(baseUrl + subUrl));
-    try {
-      if (response.statusCode == 200) {
-        List<dynamic> list = json.decode(response.body);
-        return list.map((e) => DestinationModel.fromJson(e)).toList();
-      }
-    } catch (e) {
-      print(e);
-    }
-    return <DestinationModel>[];
-  }
-*/Future<List<Map<String, String>>> getInfoDestination() async {
+  Future<List<Map<String, String>>> getInfoDestination() async {
     String subUrl = "/destination";
     http.Response response = await http.get(Uri.parse(baseUrl + subUrl));
     Completer<List<Map<String, String>>> completer = Completer();
