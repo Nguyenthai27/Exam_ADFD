@@ -8,14 +8,7 @@ import 'package:exam/widgets/app_bar_container.dart';
 
 import '../core/helper/ImageHelper.dart';
 
-/*
-class HomePageNew extends StatefulWidget {
-const HomePageNew({super.key});
 
-@override
-State<HomePageNew> createState() => _HomePageNewState();
-}
-*/
 
 class HomePageNew extends StatefulWidget {
   @override
@@ -23,32 +16,7 @@ class HomePageNew extends StatefulWidget {
 }
 
 class _HomePageNewState extends State<HomePageNew> {
-  /*final List<Map<String,String>> listImageLeft =
-  [
-    {
-      'name': 'Portugal',
-      'image': "assets/images/portugal.png",
-    },{
-    'name': 'France',
-    'image': "assets/images/dalat.jpg",
-  },
-    {
-      'name': 'England',
-      'image': "assets/images/hoian.jpg",
-    },
-    {
-      'name': 'Spain',
-      'image': "assets/images/spain.png",
-    },
-    {
-      'name': 'Argentina',
-      'image': "assets/images/hanoi.jpg",
-    },
-    {
-      'name': 'Germany',
-      'image': "assets/images/saigon.jpg",
-    },
-  ];*/
+  
   List<Map<String,String>> listImageLeft =[];
   @override
   void initState() {
@@ -68,9 +36,7 @@ class _HomePageNewState extends State<HomePageNew> {
 
   Widget _buildImageHomScreen(String name, String image) {
     return GestureDetector(
-      onTap: () {
-         // Navigator.push(context, MaterialPageRoute(builder: (context) => SearchPage()));
-      },
+     
       child: Container(
         child: Stack(
           alignment: Alignment.topRight,
